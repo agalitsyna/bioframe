@@ -32,7 +32,7 @@ def read_table(filepath_or, schema=None, **kwargs):
 
 
 def read_chromsizes(filepath_or,
-                    name_patterns=(r'^chr[0-9]+$', r'^chr[XY]$', r'^chrM$'),
+                    name_patterns=(r'^chr[0-9]+$', r'^chr[XYZW]$', r'^chrM$',r'^chr[0-9]+[LR]$'),
                     natsort=True,
                     **kwargs):
     """
